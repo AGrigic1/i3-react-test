@@ -1,0 +1,69 @@
+.page-header {
+    color: blue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.page-para {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.container-all {
+    color: rgb(53, 53, 53);
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+}
+
+.grid-container {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.gallery-p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.gallery-p-hidden {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.bunny-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .container-all {
+        width: 80%;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+
+    .gallery-hidden {
+        display: none;
+    }
+
+    .gallery-p-hidden {
+        display: none;
+    }
+
+    .bunny-mobile {
+        display: block;
+        width: 60%;
+        padding-bottom: 3rem;
+        margin: auto;
+    }
+}
